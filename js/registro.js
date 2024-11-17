@@ -27,11 +27,11 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 function getCargo() {
     // Aqui você pode verificar qual página está sendo carregada
     // No caso de 'cadastro_usuario.html', definimos o cargo como "cliente"
-    if (window.location.pathname.includes("cadastro_usuario.html")) {
+    if (window.location.pathname.includes("cadastro_usuario.html") || window.location.pathname.includes("cadastro_usuario")) {
         return "cliente";  // Para a página de cadastro de usuário, o cargo será "cliente"
-    }  else if (window.location.pathname.includes("cadastro_psicologo.html")) {
+    }  else if (window.location.pathname.includes("cadastro_psicologo.html")|| window.location.pathname.includes("cadastro_psicologo")) {
         return "psicologo";  // Para a página de cadastro de usuário, o cargo será "cliente"
-    } else if (window.location.pathname.includes("cadastro_rh.html")) {
+    } else if (window.location.pathname.includes("cadastro_rh.html")|| window.location.pathname.includes("cadastro_rh")) {
         return "rh";  // Para a página de cadastro de usuário, o cargo será "cliente"
     } 
     // Defina outros cargos para outras páginas, se necessário
