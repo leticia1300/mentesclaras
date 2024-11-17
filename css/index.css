@@ -21,14 +21,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #ffffff;
+    background-color: #904039;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
 }
 
 .client-button {
@@ -127,7 +127,7 @@ flex-direction: column-reverse;
 
 .btn {
     padding: 12px 24px;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #492222;
     border: none;
     border-radius: 20px;
@@ -144,7 +144,7 @@ flex-direction: column-reverse;
 .styled-line {
     border: 0; /* Remove a borda padrão */
     height: 2px; /* Define a altura */
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 20px 0; /* Espaçamento vertical */
     border-radius: 5px; /* Arredonda os cantos */
 }
