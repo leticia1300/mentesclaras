@@ -1,0 +1,88 @@
+/* Corrigido: body, sem o ponto antes */
+body {
+    overflow-y: auto; /* Permite rolagem vertical na página toda */
+}
+
+#calendar-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#available-times {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none;
+}
+
+#available-times h2 {
+    margin-bottom: 10px;
+}
+
+#time-list {
+    list-style: none;
+    padding: 0;
+    max-height: 200px; /* Altura máxima para a lista de horários */
+    overflow-y: auto; /* Habilita o scroll quando necessário */
+    margin: 0;
+}
+
+#time-list li {
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#time-list li:hover {
+    background-color: #90403977;
+}
+
+/* Cor de fundo para as células do calendário */
+.fc-day.fc-day-other {
+    background-color: transparent; /* Cor de fundo para células vazias */
+}
+
+.fc-day.fc-day-number {
+    background-color: transparent; /* Cor de fundo para os dias com número */
+    border: 1px solid #000000; /* Bordas sutis */
+}
+
+.fc-day:hover {
+    background-color: #000000; /* Cor de fundo quando o mouse passa sobre um dia */
+}
+
+/* Alterando as cores para as linhas que você mencionou, mantendo o contraste */
+.fc-daygrid-day {
+    background-color: #9040394d; /* Cor branca para os dias com número */
+    border: 1px solid #000000; /* Borda mais clara */
+}
+
+/* Ajuste para o hover sobre as células */
+.fc-daygrid-day:hover {
+    background-color: #f0f0f0; /* Alterar para um tom de cinza claro */
+}
+
+/* Para os dias selecionados (a data em que o usuário clica) */
+.fc-daygrid-day.fc-day-selected {
+    background-color: #90403977; /* Cor de fundo para o dia selecionado */
+    color: rgb(255, 0, 0);
+}
+
+/* Estilo do título dos dias da semana */
+.fc-col-header-cell {
+    background-color: transparent; /* Título dos dias com cor clara */
+    color: #000000;
+}

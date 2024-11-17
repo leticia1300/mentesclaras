@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+
+    <!-- FullCalendar 5.x CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/agenda_cliente.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="agendacliente.html" class="active">
+                        <img src="../img/icons8-agenda-50.png" alt="Ícone do Dashboard"
+                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                        Calendário de Consulta
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>MenteClara</h1>
+                <div class="user-dropdown">
+                    <button class="user-button"><img src="../img/imagem-do-usuario-com-fundo-preto.png"
+                            alt="Ícone do Dashboard"
+                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">Usuário
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../index.html">Sair</a>
+                    </div>
+                </div>
+            </header>
+            <div id="calendar-container">
+                <div id="calendar"></div>
+            </div>
+            <div id="available-times" style="display: none;">
+                <h2>Horários Disponíveis para <span id="selected-date"></span>:</h2>
+                <ul id="time-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FullCalendar 5.x JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+
+    <!-- O script do seu calendário -->
+    <script src="../js/agenda_clientes.js"></script>
+</body>
+
+</html>

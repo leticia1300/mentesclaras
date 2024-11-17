@@ -1,0 +1,49 @@
+<!-- cadastro_usuario.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="../css/cadastro_psicologo.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra superior -->
+        <header>
+            <div class="logo">MenteClara</div>
+            <a href="../index.html">
+                <button type="button" class="btn">Voltar à página inicial</button>
+            </a>
+        </header>
+
+        <!-- Tela de cadastro -->
+        <div class="login-box">
+            <form id="loginForm">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                
+
+                <label for="companhia">Companhia</label>
+                <input type="text" id="companhia" name="companhia" placeholder="Digite sua companhia" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+
+                <label for="email">E-mail do Psicologo:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+                <button type="submit" class="btn-submit">Concluir cadastro</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="../js/registro.js"></script>
+    <!-- Importa a lógica de registro -->
+</body>
+</html>
