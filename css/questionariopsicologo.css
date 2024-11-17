@@ -29,7 +29,7 @@ body {
 select {
     padding: 5px 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 4px;
 }
 
@@ -54,14 +54,14 @@ button.risk {
 /* Container do questionário */
 .questionnaire-container {
     padding: 20px;
-    background-color: #fff;
+    background-color: #fffefe;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: justify;
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Estilo de cada pergunta */
@@ -86,25 +86,25 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #000000;
 }
 
 .status-label {
-    color: rgb(255, 255, 255); /* Altere para a cor desejada */
+    color: rgb(0, 0, 0); /* Altere para a cor desejada */
     font-weight: bold; /* Opcional: deixa o texto em negrito */
     font-size: 20px;
 }
 
 .dados{
-    color: rgb(255, 255, 255); /* Altere para a cor desejada */
+    color: rgb(0, 0, 0); /* Altere para a cor desejada */
     font-weight: bold; /* Opcional: deixa o texto em negrito */
     font-size: 10%;
 }
