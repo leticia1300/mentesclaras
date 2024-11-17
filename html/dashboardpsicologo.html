@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="dashboardpsicologo.html" class="active">Dashboard</a></li>
+                <li><a href="clientepsicologo.html">Clientes</a></li>
+                <li><a href="agendapsicologo.html">Agenda</a></li>
+                <li><a href="questionariopsicologo.html">Questionários</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <header>
+                <h1>MenteClara</h1>
+                <div class="user-dropdown">
+                    <button class="user-button">Usuário ▼</button>
+                    <div class="dropdown-menu">
+                        
+                        <a href="pagina inicial.html">Sair</a>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <h2>Visão Geral das Vendas</h2>
+                <div class="grafico-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

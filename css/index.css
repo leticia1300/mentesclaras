@@ -1,0 +1,122 @@
+/* Resetando algumas propriedades padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a altura mínima da página e o fundo */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Estilo do header */
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.client-button {
+    padding: 12px 24px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner {
+    background-image: url('../img/roxo.jpg');
+    background-size: 60%;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+footer {
+    background-image: url('../img/roxo.jpg');
+    /*background-color: #0a0a0a;*/
+    padding: 20px;
+    text-align: justify;
+    border-top: 2px solid #0056FF;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 10p;
+    display: flex;
+}
+
+.footer-logo{
+    width: 50%;
+    display: flex;
+align-items: flex-start;
+color: #ffffff;
+}
+
+.footer-icons {
+  width: 50%;
+    display: flex;
+align-items: flex-end;
+flex-direction: column-reverse;
+
+}
+
+.footer-info {
+   
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer-icons ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centraliza os ícones */
+}
+
+.footer-icons li {
+    margin: 10px 0; /* Espaçamento entre os itens */
+    font-size: 0.8rem; /* Diminui o tamanho dos ícones */
+    color: #fff; /* Cor branca para o texto dos ícones */
+}
+
+.small-image {
+    width: 20px; /* Largura menor para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Container principal */
+.containers{
+   
+    margin: 0 auto;
+}
+
+.H1 {
+
+    font-size: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown label {
+    
+    font-weight: bold;
+    margin-right: 10px;
+}

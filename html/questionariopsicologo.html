@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionários</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/questionariopsicologo.css">
+</head>
+
+<body>
+    <div class="containers">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="dashboardpsicologo.html">Dashboard</a></li>
+                <li><a href="clientepsicologo.html">Clientes</a></li>
+                <li><a href="agendapsicologo.html">Agenda</a></li>
+                <li><a href="questionariopsicologo.html" class="active">Questionários</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1>MenteClara</h1>
+                <div class="user-dropdown">
+                    <button class="user-button">Usuário ▼</button>
+                    <div class="dropdown-menu">
+
+                        <a href="pagina inicial.html">Sair</a>
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+
+
+                <div class="header">
+                    <div class="drop">
+                        <label for="clients" class="status-label">Cliente:</label>
+                        <select id="clients" name="clients">
+                            <option value="cliente1">Jane Cooper</option>
+                            <option value="cliente2">kristin Watson</option>
+                            <option value="cliente3">Floyd Miles</option>
+                            <option value="cliente4">Ronald Richards</option>
+
+                        </select>
+
+                    </div>
+                    <div class="dados">
+                        <label for="clients">Dados do cliente</label>
+                    </div>
+                    <div class="status">
+
+                        <label for="clients" class="status-label">Status:</label>
+
+                        <button id="statusButton" class="risk">Em Risco</button>
+                     
+                    </div>
+                </div>
+                <div class="hs">
+                <hr class="styled-line">
+            </div>
+                <form id="checkbox-questionnaire">
+                    <!-- Pergunta 1 -->
+                    <div class="question">
+                        <label>
+                            <h1>1. Você considera sedentário?</h1>
+                        </label>
+                        <br><label><input type="checkbox" name="fruits" value="Maçã">Sim, me considero.</label>
+                        <label><input type="checkbox" name="fruits" value="Banana"> Não me considero.</label>
+                        <label><input type="checkbox" name="fruits" value="Laranja"> Talvez.</label></br>
+
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="question">
+                        <label>
+                            <h1>2. Você faz atividade física?</h1>
+                        </label>
+                        <br><label><input type="checkbox" name="sports" value="Futebol"> Sim, pratico
+                            exercícios.</label>
+                        <label><input type="checkbox" name="sports" value="Basquete"> Não pratico exercícios.</label>
+                        <label><input type="checkbox" name="sports" value="Natação">Pratico poucos
+                            exercícios.</label></br>
+
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="question">
+                        <label>
+                            <h1>3.Você tem conseguido dormir bem?</h1>
+                        </label>
+                        <br><label><input type="checkbox" name="languages" value="Português"> Sim, estou conseguindo
+                            dormir.</label>
+                        <label><input type="checkbox" name="languages" value="Inglês"> Não estou conseguindo dormir.
+                        </label>
+                        <label><input type="checkbox" name="languages" value="Espanhol">As vezes.</label></br>
+
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="question">
+                        <label>
+                            <h1>4.Tem conseguido se concentrar no que faz?</h1>
+                        </label>
+                        <br> <label><input type="checkbox" name="technologies" value="HTML"> Sim, estou conseguindo.
+                        </label>
+                        <label><input type="checkbox" name="technologies" value="CSS"> Não estou conseguindo. </label>
+
+                        <label><input type="checkbox" name="technologies" value="Python"> As vezes consigo.
+                        </label></br>
+                    </div>
+
+
+                </form>
+
+
+            </section>
+
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
