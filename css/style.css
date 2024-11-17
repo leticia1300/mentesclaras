@@ -179,7 +179,7 @@ header h1 {
 }
 
 .user-button:hover {
-    background-color: #0056b3;
+    background-color: #a7877fa9;
 }
 
 .dropdown-menu {
@@ -213,3 +213,10 @@ header h1 {
     display: block;
 }
 
+/* Ícone no menu */
+.menu-icon {
+ 
+    height: 20px;
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+}
