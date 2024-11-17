@@ -1,6 +1,6 @@
 import { auth, database, createUserWithEmailAndPassword, ref, set } from './firebase.js';
 
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const nome = document.getElementById("nome").value;
@@ -29,11 +29,11 @@ function getCargo() {
     // No caso de 'cadastro_usuario.html', definimos o cargo como "cliente"
     if (window.location.pathname.includes("cadastro_usuario.html") || window.location.pathname.includes("cadastro_usuario")) {
         return "cliente";  // Para a página de cadastro de usuário, o cargo será "cliente"
-    }  else if (window.location.pathname.includes("cadastro_psicologo.html")|| window.location.pathname.includes("cadastro_psicologo")) {
+    } else if (window.location.pathname.includes("cadastro_psicologo.html") || window.location.pathname.includes("cadastro_psicologo")) {
         return "psicologo";  // Para a página de cadastro de usuário, o cargo será "cliente"
-    } else if (window.location.pathname.includes("cadastro_rh.html")|| window.location.pathname.includes("cadastro_rh")) {
+    } else if (window.location.pathname.includes("cadastro_rh.html") || window.location.pathname.includes("cadastro_rh")) {
         return "rh";  // Para a página de cadastro de usuário, o cargo será "cliente"
-    } 
+    }
     // Defina outros cargos para outras páginas, se necessário
     return "desconhecido";  // Um cargo padrão
 }
@@ -51,16 +51,17 @@ function registerUser(nome, cargo, companhia, cidade, email, password) {
                     cargo: cargo,  // Inclui o cargo no banco de dados
                     companhia: companhia,
                     cidade: cidade,
-                    email: email
+                    email: email,
+                    status: true
                 })
-                .then(() => {
-                    console.log("Usuário cadastrado e informações salvas no banco de dados!");
-                    resolve();
-                })
-                .catch((error) => {
-                    console.error("Erro ao salvar informações no banco de dados: ", error);
-                    reject(error);
-                });
+                    .then(() => {
+                        console.log("Usuário cadastrado e informações salvas no banco de dados!");
+                        resolve();
+                    })
+                    .catch((error) => {
+                        console.error("Erro ao salvar informações no banco de dados: ", error);
+                        reject(error);
+                    });
 
             })
             .catch((error) => {

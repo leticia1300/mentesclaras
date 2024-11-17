@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '2024-11-18': ['13:00', '14:30', '16:00'],
         '2024-11-19': ['10:00', '11:00', '14:00'],
         '2024-11-20': ['09:00', '12:00', '15:30'],
-        '2024-11-21': ['13:00', '14:30', '16:00'],
+        '2024-1-21': ['13:00', '14:30', '16:00'],
     };
 
     // Inicializa o calendário
@@ -45,4 +45,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
-});
+}
+)

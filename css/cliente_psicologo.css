@@ -32,10 +32,21 @@ table tr:hover {
     border-radius: 5px;
 }
 
+
 .status-btn.active {
-    background-color: green;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .status-btn.inactive {
-    background-color: red;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }

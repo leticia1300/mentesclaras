@@ -126,3 +126,48 @@ header {
 .h1{
     font-size: 20px;
 }
+
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* Estilos para o botão */
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Oculta o elemento de mensagem por padrão */
+.hidden {
+    display: none;
+}
+
+/* Estilo para a mensagem de sucesso */
+.success {
+    display: block;
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Estilo para a mensagem de erro */
+.error {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
