@@ -12,11 +12,18 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     const password = document.getElementById("password").value;
 
     // Valida as credenciais
-    if (email === "psicologo@menteclara.com" && password === "senha123") {
+    if (email === "psicologo@menteclara.com" && password === "1") {
         // Redireciona para a página do dashboard
         window.location.href = "../html/dashboardpsicologo.html";
-    } else {
-        // Exibe uma mensagem de erro
+
+    }
+    else if (email === "rh@menteclara.com" && password === "1") {
+        // Redireciona para a página do dashboard
+        window.location.href = "../html/dashboardrh.html";
+
+    }
+    else {
+
         alert("E-mail ou senha incorretos. Tente novamente.");
     }
 });
