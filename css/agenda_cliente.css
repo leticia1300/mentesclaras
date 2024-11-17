@@ -1,5 +1,6 @@
 /* Corrigido: body, sem o ponto antes */
 body {
+    font-family: 'bahnschrift';
     overflow-y: auto; /* Permite rolagem vertical na página toda */
 }
 
