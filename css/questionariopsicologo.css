@@ -106,3 +106,11 @@ button[type="submit"]:hover {
     font-weight: bold; /* Opcional: deixa o texto em negrito */
     font-size:150%;
 }
+
+.styled-line {
+    border: 0; /* Remove a borda padrão */
+    height: 2px; /* Define a altura */
+    background-color: black;
+    margin: 20px 0; /* Espaçamento vertical */
+    border-radius: 5px; /* Arredonda os cantos */
+}

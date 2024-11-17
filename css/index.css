@@ -8,18 +8,20 @@
 /* Definindo a altura mínima da página e o fundo */
 body, html {
     height: 100%;
+    background-image: url('../img/linhas.jpg');
     font-family: 'Arial', sans-serif;
-    background-color: #f3f3f3;
+    background-size: 100%;
+
 }
 
 /* Estilo do header */
 header {
-
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -30,6 +32,7 @@ header .logo {
 }
 
 .client-button {
+    
     padding: 12px 24px;
     background-color: #000000;
     color: #ffffff;
@@ -41,19 +44,20 @@ header .logo {
 }
 
 .banner {
-    background-image: url('../img/roxo.jpg');
-    background-size: 60%;
+    background-image: url('../img/marrom.jpg');
+    background-size: 100%;
     background-position: center;
     color: #ffffff;
     text-align: center;
     padding: 60px 20px;
 }
 footer {
-    background-image: url('../img/roxo.jpg');
+    background-image: url('../img/marrom.jpg');
     /*background-color: #0a0a0a;*/
+    background-size: 100%;
     padding: 20px;
     text-align: justify;
-    border-top: 2px solid #0056FF;
+ 
 }
 
 .footer-container {
@@ -119,4 +123,57 @@ flex-direction: column-reverse;
     
     font-weight: bold;
     margin-right: 10px;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    background-color: #492222;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.styled-line {
+    border: 0; /* Remove a borda padrão */
+    height: 2px; /* Define a altura */
+    background-color: black;
+    margin: 20px 0; /* Espaçamento vertical */
+    border-radius: 5px; /* Arredonda os cantos */
+}
+
+.small-image {
+    width: 32px; /* Define a largura da imagem */
+    height: 32px; /* Define a altura da imagem */
+    margin-right: 8px; /* Espaçamento entre a imagem e o texto */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
+    display: flex; /* Exibe os itens lado a lado */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+li {
+    display: flex; /* Garante que os conteúdos dentro do item fiquem organizados */
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 8px; /* Espaçamento entre a imagem e o texto */
+}
+
+
+
+.small-image {
+    width: 32px; /* Define a largura da imagem */
+    height: 32px; /* Define a altura da imagem */
 }
