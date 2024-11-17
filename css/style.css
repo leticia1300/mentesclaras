@@ -169,7 +169,7 @@ header h1 {
 }
 
 .user-button {
-    background-color: #e3bbb0;
+    background-color: transparent;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 15px;
