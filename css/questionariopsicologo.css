@@ -61,7 +61,7 @@ button.risk {
 
 h1 {
     text-align: justify;
-    color: #ffffff;
+    color: #fffefe;
 }
 
 /* Estilo de cada pergunta */
@@ -71,7 +71,7 @@ h1 {
 
 /* Estilo de checkbox */
 label {
-
+color: #000000;
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
@@ -106,5 +106,5 @@ button[type="submit"]:hover {
 .dados{
     color: rgb(0, 0, 0); /* Altere para a cor desejada */
     font-weight: bold; /* Opcional: deixa o texto em negrito */
-    font-size: 10%;
+    font-size:150%;
 }

@@ -44,7 +44,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 th, td {
