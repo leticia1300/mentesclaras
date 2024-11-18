@@ -52,7 +52,7 @@ function registerUser(nome, cargo, companhia, cidade, email, password) {
                     companhia: companhia,
                     cidade: cidade,
                     email: email,
-                    status: true
+                    status: ativo
                 })
                     .then(() => {
                         console.log("Usuário cadastrado e informações salvas no banco de dados!");

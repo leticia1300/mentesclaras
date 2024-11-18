@@ -13,19 +13,26 @@
     <div class="container">
         <div class="sidebar">
             <ul class="sidebar-menu">
-                <li><a href="dashboard_psicologo.html" >
-                    <img src="../img/painel-de-controle.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-                    Dashboard
-                </a></li>
-                <li> <a href="cliente_psicologo.html"><img src="../img/cliente.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-                 Cliente
-                </a></li>
-                <li><a href="agenda_psicologo.html" class="active"><img src="../img/agenda.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-                    Agenda
-                   </a></li>
-                   <li><a href="questionario_psicologo.html" ><img src="../img/questionario.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-                   Questionários
-                   </a></li>
+                <li><a href="dashboard_psicologo.html">
+                        <img src="../img/painel-de-controle.png" alt="Ícone do Dashboard"
+                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                        Dashboard
+                    </a></li>
+                <li><a href="cliente_psicologo.html">
+                        <img src="../img/cliente.png" alt="Ícone do Cliente"
+                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                        Cliente
+                    </a></li>
+                <li><a href="agenda_psicologo.html" class="active">
+                        <img src="../img/agenda.png" alt="Ícone da Agenda"
+                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                        Agenda
+                    </a></li>
+                <li><a href="questionario_psicologo.html">
+                        <img src="../img/questionario.png" alt="Ícone dos Questionários"
+                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                        Questionários
+                    </a></li>
             </ul>
         </div>
 
@@ -33,19 +40,25 @@
             <header>
                 <h1>MenteClara</h1>
                 <div class="user-dropdown">
-                    <button class="user-button"><img src="../img/imagem-do-usuario-com-fundo-preto.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">Usuário </button>
+                    <button class="user-button">
+                        <img src="../img/imagem-do-usuario-com-fundo-preto.png" alt="Ícone do Usuário"
+                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                        Usuário
+                    </button>
                     <div class="dropdown-menu">
-                        
                         <a href="../index.html">Sair</a>
                     </div>
                 </div>
             </header>
+
             <section class="content">
-         
+                <!-- Calendário -->
                 <div id="calendar-container">
                     <div id="calendar"></div>
                 </div>
-                <table>
+
+                <!-- Tabela de agendamentos -->
+                <table id="appointments-table">
                     <thead>
                         <tr>
                             <th>Nome</th>
@@ -55,37 +68,19 @@
                             <th>Data</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>João Silva</td>
-                            <td>TelecomX</td>
-                            <td>joao@email.com</td>
-                            <td>(11) 98765-4321</td>
-                            <td>2024-11-15</td>
-                        </tr>
-                        <tr>
-                            <td>Maria Santos</td>
-                            <td>Claro</td>
-                            <td>maria@email.com</td>
-                            <td>(21) 99876-5432</td>
-                            <td>2024-11-16</td>
-                        </tr>
-                        <tr>
-                            <td>Pedro Almeida</td>
-                            <td>Vivo</td>
-                            <td>pedro@email.com</td>
-                            <td>(31) 91234-5678</td>
-                            <td>2024-11-17</td>
-                        </tr>
+                    <tbody id="appointments-body">
+                        <!-- As linhas de agendamentos serão inseridas aqui -->
                     </tbody>
-
+                    <tr id="no-data-message" style="display: none;">
+                        <td colspan="5" style="text-align: center;">Nenhum agendamento encontrado</td>
+                    </tr>
                 </table>
+
             </section>
         </div>
-
     </div>
 
-    <script src="../js/script.js"></script>
+    <script type="module" src="../js/agenda_psicologo.js"></script>
 </body>
 
 </html>

@@ -28,19 +28,22 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
                         console.log("Informações do usuário: ", userData);
 
                         // Verifica o cargo do usuário e faz o redirecionamento
-                        if (userData.cargo === 'rh') {
-                            // Se o cargo for 'rh', redireciona para a página do RH
-                            window.location.href = "../html/dashboard_rh.html";
-                        } else if (userData.cargo === 'cliente') {
+                        if (userData.status === 'Ativo') {
+                            if (userData.cargo === 'rh') {
+                                // Se o cargo for 'rh', redireciona para a página do RH
+                                window.location.href = "../html/dashboard_rh.html";
+                            } else if (userData.cargo === 'cliente') {
 
-                            // Se o cargo não for 'rh', redireciona para a página do usuário
-                            window.location.href = "../html/agenda_cliente.html";
-                        } else if (userData.cargo === 'psicologo') {
-                            // Se o cargo não for 'rh', redireciona para a página do usuário
-                            window.location.href = "../html/dashboard_psicologo.html";
+                                // Se o cargo não for 'rh', redireciona para a página do usuário
+                                window.location.href = "../html/agenda_cliente.html";
+                            } else if (userData.cargo === 'psicologo') {
+                                // Se o cargo não for 'rh', redireciona para a página do usuário
+                                window.location.href = "../html/dashboard_psicologo.html";
+                            }
+                        } else {
+                            console.log("Você está desativado.");
                         }
 
-                  
                     } else {
                         console.log("Nenhuma informação encontrada para o usuário.");
                     }

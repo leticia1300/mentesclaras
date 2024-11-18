@@ -5,19 +5,6 @@ document.querySelectorAll('.sidebar-menu li a').forEach((link) => {
     });
 });
 
-// Função para alternar o status do botão entre Ativo e Inativo
-function toggleStatus(button) {
-    if (button.classList.contains('active')) {
-        button.classList.remove('active');
-        button.classList.add('inactive');
-        button.textContent = 'Inativo';
-    } else {
-        button.classList.remove('inactive');
-        button.classList.add('active');
-        button.textContent = 'Ativo';
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     const calendarElement = document.getElementById('calendar');
     const contactListElement = document.getElementById('contact-list');

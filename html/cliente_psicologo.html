@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
+    <title>Usuários</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cliente_psicologo.css">
 </head>
@@ -11,17 +11,17 @@
     <div class="container">
         <div class="sidebar">
             <ul class="sidebar-menu">
-                <li><a href="dashboard_psicologo.html" >
+                <li><a href="dashboard_psicologo.html">
                     <img src="../img/painel-de-controle.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
                     Dashboard
                 </a></li>
                 <li><a href="cliente_psicologo.html" class="active"><img src="../img/cliente.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
                     Cliente
                    </a></li>
-                   <li><a href="agenda_psicologo.html"><img src="../img/agenda.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                <li><a href="agenda_psicologo.html"><img src="../img/agenda.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
                     Agenda
                    </a></li>
-                   <li><a href="questionario_psicologo.html" ><img src="../img/questionario.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
+                <li><a href="questionario_psicologo.html"><img src="../img/questionario.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
                     Questionários
                     </a></li>
             </ul>
@@ -33,96 +33,30 @@
                 <div class="user-dropdown">
                     <button class="user-button"><img src="../img/imagem-do-usuario-com-fundo-preto.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">Usuário </button>
                     <div class="dropdown-menu">
-                        
                         <a href="../index.html">Sair</a>
                     </div>
                 </div>
             </header>
             <section class="content">
-                <h2>Informações dos Clientes</h2>
+                <h2>Informações dos Usuários</h2>
                 <table>
                     <thead>
                         <tr>
                             <th>Nome</th>
                             <th>Companhia</th>
-                            <th>Telefone </th>
+                            <th>Telefone</th>
                             <th>Email</th>
                             <th>Cidade</th>
                             <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Jane Cooper</td>
-                            <td>Tigre</td>
-                            <td>(47) 555-0118</td>
-                            <td>jane@gmail.com</td>
-                            <td>São Paulo</td>
-                            <td><button class="status-btn active" onclick="toggleStatus(this)">Ativo</button></td>
-                        </tr>
-                        <tr>
-                            <td>Maria Santos</td>
-                            <td>Docol</td>
-                            <td>(71) 98120-9140</td>
-                            <td>floyd@gmail.com</td>
-                            <td>Rio de Janeiro</td>
-                            <td><button class="status-btn inactive" onclick="toggleStatus(this)">Inativo</button></td>
-                        </tr>
-                        <tr>
-                            <td>Ronald Richards</td>
-                            <td>havan</td>
-                            <td>(84) 2891-2934</td>
-                            <td>ronald@gmail.com</td>
-                            <td>Brasília</td>
-                            <td><button class="status-btn active" onclick="toggleStatus(this)">Ativo</button></td>
-                        </tr>
-                        <tr>
-                            <td>Marvin McKinney</td>
-                            <td>SanReTech</td>
-                            <td>(85) 3753-3671</td>
-                            <td>marvin@gmail.com</td>
-                            <td>Fortaleza</td>
-                            <td> <button class="status-btn active" onclick="toggleStatus(this)">Ativo</button></td>
-                        </tr>
-                        <tr>
-                            <td>Jerome Bell</td>
-                            <td>Transtusa</td>
-                            <td>(92) 98204-9403</td>
-                            <td>jerome@gmail.com</td>
-                            <td>Rio de Janeiro</td>
-                            <td><button class="status-btn inactive" onclick="toggleStatus(this)">Inativo</button></td>
-                        </tr>
-                        <tr>
-                            <td>Pedro Almeida</td>
-                            <td>Vivo</td>
-                            <td>(31) 91234-5678</td>
-                            <td>pedro2345@gmail.com</td>
-                            <td>Belém</td>
-                            <td><button class="status-btn active" onclick="toggleStatus(this)">Ativo</button></td>
-                        </tr>
-                        <tr>
-                            <td>Kathryn Murphy</td>
-                            <td>TUPY SA</td>
-                            <td>(83) 2988-3043</td>
-                            <td>kathryn@gmail.com</td>
-                            <td>Belém</td>
-                            <td><button class="status-btn inactive" onclick="toggleStatus(this)">Inativo</button></td>
-                        </tr>
-                        <tr>
-                            <td>Kristin Watson</td>
-                            <td>Britania</td>
-                            <td>(61) 3803-4431</td>
-                            <td>kristin@gmail.com</td>
-                            <td>Manaus</td>
-                            <td><button class="status-btn active" onclick="toggleStatus(this)">Ativo</button></td>
-                        </tr>
                     </tbody>
                 </table>
             </section>
-        
         </div>
     </div>
 
-    <script src="../js/script.js" type="module" ></script>
+    <script src="../js/cliente_psicologo.js" type="module"></script>
 </body>
 </html>
