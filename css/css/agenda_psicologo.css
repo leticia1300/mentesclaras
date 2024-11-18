@@ -1,0 +1,127 @@
+/* Estilo do container do calendário */
+#calendar-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Estilo do calendário */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#calendar div {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cabeçalhos do calendário */
+#calendar .header {
+    font-weight: normal; /* Não em negrito */
+    background-color: transparent;
+}
+
+/* Estilo para o dia selecionado */
+#calendar .selected {
+    background-color: #904039; /* Cor de fundo para o dia selecionado */
+    color: white;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+/* Estilo das células de cabeçalho */
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    transition: background-color 0.3s ease;
+}
+
+/* Cabeçalho da tabela */
+table th {
+    background-color: transparent;
+    font-weight: normal; /* Remover o negrito */
+    color: #000;
+    text-align: left;
+}
+
+/* Estilo para o texto na tabela */
+table td {
+    color: #333;
+}
+
+/* Estilo para as linhas da tabela */
+table tr:nth-child(even) {
+    background-color: #90403942; /* Cor de fundo para as linhas pares */
+}
+
+table tr:hover {
+    background-color: #9040392c; /* Cor de fundo quando o mouse passa sobre a linha */
+}
+
+/* Estilo para a célula de agendamento */
+.has-appointment {
+    background-color: #904039c2; /* Cor para os dias com agendamentos */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Estilo para a mensagem quando não há dados */
+#no-data-message {
+    text-align: center;
+    background-color: transparent;
+    color: #888;
+    font-size: 14px;
+    padding: 20px;
+    display: none; /* Inicialmente oculto */
+}
+
+/* Mostrar a mensagem quando não houver agendamentos */
+table tbody#appointments-body tr#no-data-message {
+    display: table-row;
+}
+
+.user-button:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Ajuste para o footer ou outras seções */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #34495e; /* Cor de fundo do footer */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

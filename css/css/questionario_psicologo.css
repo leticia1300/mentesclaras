@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3bbb0;
+    color: #000000;
+overflow-y: auto;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo do header */
+.header {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Dropdown */
+.dropdown label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+/* Botão de status */
+.status button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+button.safe {
+    background-color: green;
+}
+
+button.risk {
+    background-color: red;
+}
+
+/* Container do questionário */
+.questionnaire-container {
+    padding: 20px;
+    background-color: #fffefe;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: justify;
+    color: #fffefe;
+}
+
+/* Estilo de cada pergunta */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Estilo de checkbox */
+label {
+color: #000000;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #000000;
+}
+
+.status-label {
+    color: rgb(0, 0, 0); /* Altere para a cor desejada */
+    font-weight: bold; /* Opcional: deixa o texto em negrito */
+    font-size: 20px;
+}
+
+.dados{
+    color: rgb(0, 0, 0); /* Altere para a cor desejada */
+    font-weight: bold; /* Opcional: deixa o texto em negrito */
+    font-size:150%;
+}
+
+.styled-line {
+    border: 0; /* Remove a borda padrão */
+    height: 2px; /* Define a altura */
+    background-color: black;
+    margin: 20px 0; /* Espaçamento vertical */
+    border-radius: 5px; /* Arredonda os cantos */
+}

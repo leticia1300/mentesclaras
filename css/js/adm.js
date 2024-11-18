@@ -51,14 +51,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td>${user.telefone}</td>
                 <td>${user.email}</td>
                 <td>${user.cidade}</td>
-                <td>${user.data}</td>
-                  <td>${user.hora}</td>
-            
+                <td><button class="status-btn ${user.status === 'Ativo' ? 'active' : 'inactive'}" data-user-id="${userId}">${user.status}</button></td>
             `;
             tableBody.appendChild(row);
         }
 
-
+        const statusButtons = document.querySelectorAll('.status-btn');
+        statusButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                toggleStatus(button);
+            });
+        });
     }
 
     // Chama a função fetchUsers e popula a tabela com os dados dos usuários
