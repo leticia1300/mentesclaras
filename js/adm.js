@@ -34,29 +34,37 @@ function toggleStatus(button) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const tableBody = document.querySelector("table tbody");
+    const tableBodies = {
+        cliente: document.querySelector("#cliente-table tbody"),
+        psicologo: document.querySelector("#psicologo-table tbody"),
+        rh: document.querySelector("#rh-table tbody"),
+    };
 
-    // Função para preencher a tabela com os usuários
-    function populateUserTable(users) {
-        tableBody.innerHTML = "";
+    // Função genérica para preencher qualquer tabela com base no cargo
+    function populateTable(users, cargo) {
+        const tableBody = tableBodies[cargo];
+        tableBody.innerHTML = "";  // Limpa a tabela
 
         for (let userId in users) {
             const user = users[userId];
+            if (user.cargo === cargo) {  // Verifica o cargo do usuário
+                const row = document.createElement('tr');
+                row.dataset.userId = userId;  // Usar um único dataset chave para todos
 
-            const row = document.createElement('tr');
-            row.dataset.clientId = userId;
-            row.innerHTML = `
-                <td>${user.nome}</td>
-                <td>${user.companhia}</td>
-                <td>${user.telefone}</td>
-                <td>${user.email}</td>
-                <td>${user.cidade}</td>
-                <td><button class="status-btn ${user.status === 'Ativo' ? 'active' : 'inactive'}" data-user-id="${userId}">${user.status}</button></td>
-            `;
-            tableBody.appendChild(row);
+                row.innerHTML = `
+                    <td>${user.nome}</td>
+                    <td>${user.companhia}</td>
+                    <td>${user.telefone}</td>
+                    <td>${user.email}</td>
+                    <td>${user.cidade}</td>
+                    <td><button class="status-btn ${user.status === 'Ativo' ? 'active' : 'inactive'}" data-user-id="${userId}">${user.status}</button></td>
+                `;
+                tableBody.appendChild(row);
+            }
         }
 
-        const statusButtons = document.querySelectorAll('.status-btn');
+        // Adiciona os eventos de clique nos botões de status
+        const statusButtons = tableBody.querySelectorAll('.status-btn');
         statusButtons.forEach(button => {
             button.addEventListener('click', function () {
                 toggleStatus(button);
@@ -64,8 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Chama a função fetchUsers e popula a tabela com os dados dos usuários
+    // Chama a função fetchUsers e popula as tabelas com os dados dos usuários
     fetchUsers().then(users => {
-        populateUserTable(users);
+        populateTable(users, 'cliente');
+        populateTable(users, 'psicologo');
+        populateTable(users, 'rh');
     });
 });

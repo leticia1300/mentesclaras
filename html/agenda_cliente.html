@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda</title>
+    <title>Consulta</title>
 
     <!-- FullCalendar 5.x CDN -->
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
@@ -18,9 +18,9 @@
         <div class="sidebar">
             <ul class="sidebar-menu">
                 <li><a href="agenda_cliente.html" class="active">
-                        <img src="../img/icons8-agenda-50.png" alt="Ícone do Dashboard"
-                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-                        Calendário de Consulta
+                        <img src="../img/calendar2.gif" alt="Ícone do Dashboard"
+                            style="width: 30px; height: 30px; margin-right: 9px; vertical-align: middle;">
+                        Consulta
                     </a></li>
             </ul>
         </div>
@@ -29,12 +29,12 @@
             <header>
                 <h1>MenteClara</h1>
                 <div class="user-dropdown">
-                    <button class="user-button"><img src="../img/imagem-do-usuario-com-fundo-preto.png"
+                    <button class="user-button"><img src="../img/account2.gif"
                             alt="Ícone do Dashboard"
-                            style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">Usuário
+                            style="width: 30px; height: 30px; margin-right: 9px; vertical-align: middle;">Usuário ▼
                     </button>
                     <div class="dropdown-menu">
-                        <a href="../index.html">Sair</a>
+                        <a id="logoutButton"><img src="../img/icons8-sair-50.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">Sair</a>
                     </div>
                 </div>
             </header>
@@ -53,6 +53,7 @@
 
     <!-- O script do seu calendário -->
     <script type="module" src="../js/agenda_clientes.js"></script>
+    <script type="module" src="../js/script.js"></script>
 </body>
 
 </html>

@@ -36,29 +36,56 @@ function toggleStatus(button) {
 document.addEventListener('DOMContentLoaded', function () {
     const tableBody = document.querySelector("table tbody");
 
-    // Função para preencher a tabela com os usuários
     function populateUserTable(users) {
         tableBody.innerHTML = "";
 
+        // Obtém a data atual no formato brasileiro (DD/MM/YYYY)
+        const dataAtual = new Date();
+        const dataAtualFormatada = new Intl.DateTimeFormat('pt-BR').format(dataAtual); // Formato DD/MM/YYYY
+
         for (let userId in users) {
             const user = users[userId];
+            if (user.cargo === 'cliente') {
 
-            const row = document.createElement('tr');
-            row.dataset.clientId = userId;
-            row.innerHTML = `
-                <td>${user.nome}</td>
-                <td>${user.companhia}</td>
-                <td>${user.telefone}</td>
-                <td>${user.email}</td>
-                <td>${user.cidade}</td>
-                <td>${user.data}</td>
-                  <td>${user.hora}</td>
-            
-            `;
-            tableBody.appendChild(row);
+                const row = document.createElement('tr');
+                const data = user.data;
+                let dataFormatada = 'Sem Data';
+                let hora = 'Sem Hora';
+
+                if (data && typeof data === 'object' && Object.keys(data).length > 0) {
+
+                    // Itera sobre cada entrada de data
+                    let dataExibida = false;
+                    for (const [dataChave, horaChave] of Object.entries(data)) {
+                        const [ano, mes, dia] = dataChave.split('-');
+
+                        // Formata a data no formato brasileiro (DD/MM/YYYY)
+                        dataFormatada = `${dia}/${mes}/${ano}`;
+                        hora = horaChave || 'Sem Hora';
+
+                        const dataChaveFormatada = `${dia}/${mes}/${ano}`;
+                        if (dataChaveFormatada >= dataAtualFormatada) {
+                            dataExibida = true;
+                            break;
+                        }
+                    }
+
+                    if (dataExibida) {
+                        row.dataset.clientId = userId;
+                        row.innerHTML = `
+                            <td>${user.nome}</td>
+                            <td>${user.companhia}</td>
+                            <td>${user.telefone}</td>
+                            <td>${user.email}</td>
+                            <td>${user.cidade}</td>
+                            <td>${dataFormatada}</td>
+                            <td>${hora}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    }
+                }
+            }
         }
-
-
     }
 
     // Chama a função fetchUsers e popula a tabela com os dados dos usuários

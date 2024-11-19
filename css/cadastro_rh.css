@@ -10,54 +10,67 @@ body {
     height: 100vh;
     background-color: #e3bbb0;
     color: #ffffff;
+    overflow-y: auto;
 }
 
 header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #ffffff;
+    background-color: #ff0000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container {
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    width: 450px;
+    padding: 100px;
 }
 
-.login-box {
-    width: 350px;
-    padding: 20px 30px;
-    background: #ffffff;
+.login-box { /*bordas e caixa*/
+  
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 1070px;
+    width: 600px;
+    padding: 10px 10px;
+    background: transparent;
+    border-style:solid ;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.login-box label {
+.login-box label {/*texto da caixa texto */
+    font-family: 'bahnschrift';
     display: block;
     text-align: left;
     font-size: 14px;
     margin-bottom: 8px;
-    color: #333;
+    
+    color: #000000;
 }
 
-.login-box input {
+.login-box input {/* caixa de texto*/
+justify-content: left;
     width: 100%;
-    padding: 10px;
+    padding: 8px 1px 10px;
+    padding-left: 9px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-align: justify;
     font-size: 14px;
 }
 
 .btn-submit {
-    background: #001f80;
-    color: #fff;
+    background: #904039;
+    color: #ffffff;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -68,5 +81,5 @@ header {
 }
 
 .btn-submit:hover {
-    background: #0036d1;
+    background: #90403983;
 }

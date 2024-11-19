@@ -62,18 +62,18 @@ body {
 }
 
 .fc-day:hover {
-    background-color: #000000; /* Cor de fundo quando o mouse passa sobre um dia */
+    background-color: #90403977; /* Cor de fundo quando o mouse passa sobre um dia */
 }
 
 /* Alterando as cores para as linhas que você mencionou, mantendo o contraste */
 .fc-daygrid-day {
     background-color: #9040394d; /* Cor branca para os dias com número */
-    border: 1px solid #000000; /* Borda mais clara */
+    border: 1px solid #90403977;; /* Borda mais clara */
 }
 
 /* Ajuste para o hover sobre as células */
 .fc-daygrid-day:hover {
-    background-color: #f0f0f0; /* Alterar para um tom de cinza claro */
+    background-color: #90403977; /* Alterar para um tom de cinza claro */
 }
 
 /* Para os dias selecionados (a data em que o usuário clica) */
@@ -86,4 +86,16 @@ body {
 .fc-col-header-cell {
     background-color: transparent; /* Título dos dias com cor clara */
     color: #000000;
+}
+
+.fc-event.available-event {
+    background-color: transparent;  /* Cor de fundo verde */
+    color: rgb(255, 0, 0);  /* Cor do texto branco */
+    border: 1px solid #000000;  /* Cor da borda */
+    font-weight: bold;
+}
+
+.fc-event.available-event:hover {
+    background-color: #9040394d;  /* Cor de fundo mais escura ao passar o mouse */
+    border-color: #9040394d;  /* Cor da borda mais escura */
 }

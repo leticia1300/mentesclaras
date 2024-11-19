@@ -12,8 +12,8 @@
         <div class="sidebar">
             <ul class="sidebar-menu">
                 <li><a href="adm.html" class="active">
-                    <img src="../img/painel-de-controle.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">
-                 Ajustes Clientes
+                    <img src="../img/cog.gif" alt="Ícone do Dashboard" style="width: 30px; height: 30px; margin-right: 9px; vertical-align: middle; color:black;">
+                 Ajustes de Usuários
                 </a></li>
               
             </ul>
@@ -21,17 +21,53 @@
 
         <div class="main-content">
             <header>
-                <h1>Painel de Controle MenteClara</h1>
+              
+                <h1><img src="../img/icons8-engrenagens-50.png" alt="Ícone do Dashboard" style="width: 40px; height: 40px; margin-right: 10px; vertical-align: middle;">Painel de Controle MenteClara</h1>
+
                 <div class="user-dropdown">
-                    <button class="user-button"><img src="../img/imagem-do-usuario-com-fundo-preto.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">Usuário </button>
+                    <button class="user-button"><img src="../img/account2.gif" alt="Ícone do Dashboard" style="width: 30px; height: 30px; margin-right: 9px; vertical-align: middle; color:black;">Usuário ▼ </button>
                     <div class="dropdown-menu">
-                        <a href="../index.html">Sair</a>
+                   <a id="logoutButton"><img src="../img/icons8-sair-50.png" alt="Ícone do Dashboard" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;">Sair</a>
                     </div>
                 </div>
             </header>
             <section class="content">
                 <h2>Informações dos Usuários</h2>
-                <table>
+                <table id="cliente-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Companhia</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Cidade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <section class="content">
+                <h2>Informações dos Psicologo</h2>
+                <table id="psicologo-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Companhia</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Cidade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <section class="content">
+                <h2>Informações dos RH</h2>
+                <table id="rh-table">
                     <thead>
                         <tr>
                             <th>Nome</th>
@@ -50,5 +86,7 @@
     </div>
 
     <script src="../js/adm.js" type="module"></script>
+    <script src="../js/script.js" type="module"></script>
 </body>
+
 </html>

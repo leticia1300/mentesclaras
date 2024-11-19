@@ -6,6 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     const nome = document.getElementById("nome").value;
     const companhia = document.getElementById("companhia").value;
     const cidade = document.getElementById("cidade").value;
+    const telefone = document.getElementById("telefone").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
@@ -13,7 +14,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     const cargo = getCargo();
 
     // Chama a função de registro com o cargo
-    registerUser(nome, cargo, companhia, cidade, email, password)
+    registerUser(nome, cargo, companhia, cidade, telefone, email, password)
         .then(() => {
             alert('Cadastro realizado com sucesso!');
             window.location.href = "../html/login.html"; // Redireciona para a página de login
@@ -39,7 +40,7 @@ function getCargo() {
 }
 
 // Função para registrar o usuário
-function registerUser(nome, cargo, companhia, cidade, email, password) {
+function registerUser(nome, cargo, companhia, cidade, telefone, email, password) {
     return new Promise((resolve, reject) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -51,8 +52,9 @@ function registerUser(nome, cargo, companhia, cidade, email, password) {
                     cargo: cargo,  // Inclui o cargo no banco de dados
                     companhia: companhia,
                     cidade: cidade,
+                    telefone: telefone,
                     email: email,
-                    status: ativo
+                    status: "Ativo"
                 })
                     .then(() => {
                         console.log("Usuário cadastrado e informações salvas no banco de dados!");

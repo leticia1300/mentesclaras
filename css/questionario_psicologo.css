@@ -16,7 +16,7 @@ overflow-y: auto;
 .header {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 10px;
+    margin: 20px;
    
     display: flex;
     justify-content: space-between;
