@@ -7,9 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const timeList = document.getElementById('time-list');
 
     function formatDate(date) {
+        const data = new Date(date);
+        data.setDate(data.getDate() + 1);
+
         const options = { day: '2-digit', month: 'long', year: 'numeric' };
-        return new Date(date).toLocaleDateString('pt-BR', options);
+        return data.toLocaleDateString('pt-BR', options);
     }
+
 
     function generateAvailableTimes() {
         const availableSlots = {};
