@@ -9,8 +9,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #e3bbb0;
-    color: #ffffff;
+    background-color: #2abe0d;
+    color: #ff0000;
 }
 
 /* Estilo do header */
@@ -43,7 +43,7 @@ header {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+ 
 }
 
 .btn-back {
@@ -115,7 +115,7 @@ header {
 
 /* Botão de enviar */
 .btn-submit {
-    background: #904039;
+    background: #2f00ff;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -127,5 +127,5 @@ header {
 }
 
 .btn-submit:hover {
-    background: #90403969;
+    background: #00c3ff69;
 }

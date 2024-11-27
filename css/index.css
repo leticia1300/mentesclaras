@@ -9,7 +9,7 @@
 /* Definindo a altura mínima da página e o fundo */
 body, html {
     height: 100%;
-    background-color: #e3bbb0;
+    background-color: #ffffff;
     font-family: 'Arial', sans-serif;
     background-size: 100%;
 
@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #904039;
+    background-color: #2abe0d;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -45,7 +45,7 @@ header .logo {
 }
 
 .banner {
-    background-image: url('../img/marrom.jpg');
+    background-image: url('../img/veerde.jpg');
     background-size: 100%;
     background-position: center;
     color: #ffffff;
@@ -53,7 +53,7 @@ header .logo {
     padding: 60px 20px;
 }
 footer {
-    background-image: url('../img/marrom.jpg');
+    background-image: url('../img/veerde.jpg');
     /*background-color: #0a0a0a;*/
     background-size: 100%;
     padding: 20px;
@@ -129,7 +129,7 @@ flex-direction: column-reverse;
 .btn {
     padding: 12px 24px;
     color: rgb(255, 255, 255);
-    background-color: #492222;
+    background-color: #00a2ff;
     border: none;
     border-radius: 20px;
     font-weight: bold;

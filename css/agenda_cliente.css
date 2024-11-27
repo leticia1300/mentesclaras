@@ -48,7 +48,7 @@ body {
 }
 
 #time-list li:hover {
-    background-color: #90403977;
+    background-color: #4a903977;
 }
 
 /* Cor de fundo para as células do calendário */
@@ -62,23 +62,23 @@ body {
 }
 
 .fc-day:hover {
-    background-color: #90403977; /* Cor de fundo quando o mouse passa sobre um dia */
+    background-color: #ff0000; /* Cor de fundo quando o mouse passa sobre um dia */
 }
 
 /* Alterando as cores para as linhas que você mencionou, mantendo o contraste */
 .fc-daygrid-day {
-    background-color: #9040394d; /* Cor branca para os dias com número */
-    border: 1px solid #90403977;; /* Borda mais clara */
+    background-color: #00c3ff; /* Cor branca para os dias com número */
+    border: 1px solid #394d90;; /* Borda mais clara */
 }
 
 /* Ajuste para o hover sobre as células */
 .fc-daygrid-day:hover {
-    background-color: #90403977; /* Alterar para um tom de cinza claro */
+    background-color: #2f00ffef; /* Alterar para um tom de cinza claro */
 }
 
 /* Para os dias selecionados (a data em que o usuário clica) */
 .fc-daygrid-day.fc-day-selected {
-    background-color: #90403977; /* Cor de fundo para o dia selecionado */
+    background-color: #ff150077; /* Cor de fundo para o dia selecionado */
     color: rgb(255, 0, 0);
 }
 
@@ -96,6 +96,6 @@ body {
 }
 
 .fc-event.available-event:hover {
-    background-color: #9040394d;  /* Cor de fundo mais escura ao passar o mouse */
-    border-color: #9040394d;  /* Cor da borda mais escura */
+    background-color: #1900ffbe;  /* Cor de fundo mais escura ao passar o mouse */
+    border-color: #0400ff;  /* Cor da borda mais escura */
 }

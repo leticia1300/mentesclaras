@@ -33,7 +33,7 @@
 
 /* Estilo para o dia selecionado */
 #calendar .selected {
-    background-color: #904039; /* Cor de fundo para o dia selecionado */
+    background-color: #108e97; /* Cor de fundo para o dia selecionado */
     color: white;
 }
 
@@ -68,16 +68,16 @@ table td {
 
 /* Estilo para as linhas da tabela */
 table tr:nth-child(even) {
-    background-color: #90403942; /* Cor de fundo para as linhas pares */
+    background-color: #3c903942; /* Cor de fundo para as linhas pares */
 }
 
 table tr:hover {
-    background-color: #9040392c; /* Cor de fundo quando o mouse passa sobre a linha */
+    background-color: #12d82db9; /* Cor de fundo quando o mouse passa sobre a linha */
 }
 
 /* Estilo para a célula de agendamento */
 .has-appointment {
-    background-color: #904039c2; /* Cor para os dias com agendamentos */
+    background-color: #00ccff; /* Cor para os dias com agendamentos */
     color: white;
     font-weight: bold;
     border-radius: 50%;

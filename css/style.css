@@ -7,7 +7,7 @@
 
 body {
     font-family: 'bahnschrift';
-    background-color: #e3bbb0;
+    background-color: #ffffff;
     color: #000000;
     overflow: hidden;
     font-weight: bold;
@@ -23,7 +23,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 250px;
-    background-color: #904039;
+    background-color: #2abe0d;
     color: white;
     height: 100vh;
     padding-top: 80px;
@@ -56,7 +56,7 @@ body {
 
 .sidebar-menu li a:hover,
 .sidebar-menu li a.active {
-    background-color: #5e282342;
+    background-color: #2abe0d;
     border-left: 4px solid #000000;
     padding-left: 30px;
 }
@@ -74,7 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #904039;
+    background-color: #2abe0d;
     padding: 15px 30px;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -113,7 +113,7 @@ header h1 {
 .btn {
     padding: 12px 24px;
     color: white;
-    background-color: #492222;
+    background-color: #2f00ff;
     border: none;
     border-radius: 25px;
     font-weight: bold;
@@ -126,7 +126,7 @@ header h1 {
 }
 
 .btn:hover {
-    background-color: #2c3e50;
+    background-color: #00b7ff;
 }
 
 .btn:active {
@@ -182,13 +182,13 @@ header h1 {
 }
 
 .user-button:hover {
-    background-color: #a7877fa9;
+    background-color: #97cae7a9;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #e3bbb0;
+    background-color: #b0d4e3;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 10px 0;
@@ -206,7 +206,7 @@ header h1 {
 }
 
 .dropdown-menu a:hover {
-    background-color: #5e282354;
+    background-color: #2ecdd854;
 }
 
 .user-dropdown:hover .dropdown-menu {

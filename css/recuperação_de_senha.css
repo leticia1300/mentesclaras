@@ -114,7 +114,7 @@ header {
 
 /* Botão de enviar */
 .btn-submit {
-    background: #904039;
+    background: #1100ff;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -126,7 +126,7 @@ header {
 }
 
 .btn-submit:hover {
-    background: #9040397e;
+    background: #2f00ff;
 }
 
 .h1 {
@@ -146,7 +146,7 @@ form {
 /* Estilos para o botão */
 button {
     padding: 10px;
-    background-color: #904039;
+    background-color: #2f00ff;
     color: #fff;
 
     border-radius: 4px;
